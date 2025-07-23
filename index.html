@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Portfolio</title>
+  <link rel="stylesheet" href="./Dev Portfolio_files/all.min.css">
+  <link href="./Dev Portfolio_files/css2" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    header h1 {
+      color: #00f2ff;
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00f2ff;
+    }
+    .hero {
+      text-align: center;
+      padding: 8rem 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #00f2ff;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    .typing {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      height: 30px;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeUp 1s ease;
+    }
+    section h2 {
+      text-align: center;
+      color: #00f2ff;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    form button {
+      background: #00f2ff;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .resume-button {
+      display: inline-block;
+      background: #00f2ff;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.8);
+      margin-top: 2rem;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(-20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>kausar</h1>
+    <nav>
+      <a href="http://127.0.0.1:5500/portfolio.html#hero">Home</a>
+      <a href="http://127.0.0.1:5500/portfolio.html#about">About</a>
+      <a href="http://127.0.0.1:5500/portfolio.html#skills">Skills</a>
+      <a href="http://127.0.0.1:5500/portfolio.html#education">Education</a>
+      <a href="http://127.0.0.1:5500/portfolio.html#whyhire">Why Hire Me</a>
+      <a href="http://127.0.0.1:5500/portfolio.html#projects">Projects</a>
+      <a href="http://127.0.0.1:5500/portfolio.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h2>Hello, I'm a Developer</h2>
+    <p>I build web experiences and solve problems with code.</p>
+    <div class="typing" id="typing">Tech </div>
+    <a href="http://127.0.0.1:5500/portfolio.html#about" class="resume-button">About Me</a>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>Creative and tech-savvy coder passionate about creating smooth and interactive digital experiences. Strong focus on performance, accessibility, and simplicity. Always learning, always building.</p>
+      <a href="http://127.0.0.1:5500/asset/kausar_resume.pdf" class="resume-button" target="_blank">View Resume</a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>MCA - Master of Computer Applications</h3>
+        <p>2025 - 2027 | Sanjivani University</p>
+      </div>
+      <div class="card">
+        <h3>BSc in Computer Application</h3>
+        <p>2022 - 2025 | K J Somaiya College</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="whyhire">
+    <h2>Why Hire Me</h2>
+    <div class="card">
+      <p>I’m dedicated, passionate, and efficient at solving complex problems with clean, maintainable code. I communicate well, adapt quickly, and strive for continuous learning to stay ahead in tech trends.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">HTML / CSS / JavaScript</div>
+      <div class="card">React / Tailwind</div>
+      <div class="card">Node.js / Express</div>
+      <div class="card">Python / Flask</div>
+      <div class="card">SQL / MongoDB</div>
+      <div class="card">Git / GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Grivance Support System</h3>
+        <p>Interactive admin dashboard built with React and Chart.js.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my work, skills, and journey.</p>
+      </div>
+      <div class="card">
+        <h3>Calculator with python</h3>
+        <p>Content management system with user login and blog editor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required="" fdprocessedid="3lq9g">
+      <input type="email" placeholder="Your Email" required="" fdprocessedid="g74wk8">
+      <textarea rows="5" placeholder="Your Message" required=""></textarea>
+      <button type="submit" fdprocessedid="zr2bba">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Portfolio. Built with  and clean code.</p>
+  </footer>
+
+  <script>
+    const typingElement = document.getElementById("typing");
+    const texts = ["Web Developer", "MCA Student", "Data Science", "Tech Enthusiast"];
+    let index = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const currentText = texts[index];
+      typingElement.textContent = isDeleting
+        ? currentText.substring(0, charIndex--)
+        : currentText.substring(0, charIndex++);
+
+      if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        index = (index + 1) % texts.length;
+        setTimeout(typeEffect, 300);
+      } else {
+        setTimeout(typeEffect, isDeleting ? 50 : 100);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Dev Portfolio_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
